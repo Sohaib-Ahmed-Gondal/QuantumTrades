@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@stripe/stripe-js": "^7.3.0",
+    "node-binance-api": "^1.0.9"
+  }
+}
