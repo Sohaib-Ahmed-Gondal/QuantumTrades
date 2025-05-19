@@ -24,4 +24,9 @@ export default function Document() {
       </body>
     </Html>
   );
+
+  <script 
+  src="https://www.paypal.com/sdk/js?client-id=AcnoPTFqgaaQ_7mfd7T2lMGOlBCs1XdN5QYhTxQvht7If60fCEvopI1JpEcFKcroymncP32714qu_zGt" 
+  data-namespace="paypal" 
+/>
 }

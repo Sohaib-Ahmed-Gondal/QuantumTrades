@@ -1,7 +1,9 @@
 import { useEffect } from 'react'
+import { SessionProvider } from 'next-auth/react'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
+  // Keep your existing dark mode logic
   useEffect(() => {
     if (localStorage.theme === 'dark' || 
         (!('theme' in localStorage) && 
@@ -12,7 +14,12 @@ function MyApp({ Component, pageProps }) {
     }
   }, [])
 
-  return <Component {...pageProps} />
+  // Add SessionProvider wrapper
+  return (
+    <SessionProvider session={pageProps.session}>
+      <Component {...pageProps} />
+    </SessionProvider>
+  )
 }
 
 export default MyApp
