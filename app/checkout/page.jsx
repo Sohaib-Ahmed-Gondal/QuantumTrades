@@ -1,6 +1,10 @@
 'use client';
 import { useState } from 'react';
 import { PayPalButton } from '@/components/PayPal/PayPalButton';
+// import PayPalButton from '@/components/PayPal/PayPalButton'; // default import
+// // OR
+// import { PayPalButton } from '@/components/PayPal/PayPalButton'; // named import
+
 // [Same content as above route.js]
 import { NextResponse } from 'next/server';
 import paypal from '@paypal/checkout-server-sdk';

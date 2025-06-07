@@ -1,9 +1,29 @@
-.vercel
-.env*.local
-.env
-node_modules
+# Node dependencies
+node_modules/
+
+# Build output
 .next/
-.env.local
-.env.local
-.env
-.env
+out/
+
+# Vercel
+.vercel/
+
+# Local environment variables
+.env*
+!.env.example
+
+# SQLite local DB (if applicable)
+*.db
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Mac system files
+.DS_Store
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp

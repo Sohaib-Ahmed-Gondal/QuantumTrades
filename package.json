@@ -1,59 +1,21 @@
 {
   "name": "quantum-trades",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "build:css": "tailwindcss -i ./src/styles/globals.css -o ./dist/output.css --minify"
+    "lint": "eslint ."
   },
   "dependencies": {
-    "@aws-sdk/client-dynamodb": "^3.812.0",
-    "@paypal/checkout-server-sdk": "^1.0.3",
-    "@paypal/paypal-js": "^8.2.0",
-    "@paypal/paypal-server-sdk": "^1.0.0",
-    "@paypal/paypalhttp": "^1.0.1",
-    "@paypal/react-paypal-js": "^8.8.3",
-    "@stripe/stripe-js": "^7.3.0",
-    "dotenv": "^16.5.0",
-    "framer-motion": "^12.12.1",
-    "next": "^14.1.0",
-    "next-auth": "^4.24.11",
-    "node-binance-api": "^1.0.9",
+    "@supabase/supabase-js": "^2.50.0",
+    "next": "^15.3.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^5.5.0"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.10",
-    "@tailwindcss/typography": "^0.5.16",
-    "@types/node": "^22.15.23",
-    "@types/paypal__checkout-server-sdk": "^1.0.8",
-    "@types/paypal__paypalhttp": "^1.0.3",
-    "@types/react": "^19.1.6",
-    "@types/react-dom": "^19.1.5",
-    "@types/uuid": "^10.0.0",
-    "@types/ws": "^8.18.1",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^4.1.7",
-    "typescript": "5.8.3"
-  },
-  "type": "module",
-  "main": "postcss.config.js",
-  "directories": {
-    "lib": "lib"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Sohaib-Ahmed-Gondal/QuantumTrades.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Sohaib-Ahmed-Gondal/QuantumTrades/issues"
-  },
-  "homepage": "https://github.com/Sohaib-Ahmed-Gondal/QuantumTrades#readme",
-  "description": ""
+    "eslint": "^8.44.0",
+    "eslint-config-next": "14.2.29"
+  }
 }
